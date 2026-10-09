@@ -10,6 +10,11 @@ use App\Livewire\LogPage;
 use App\Livewire\TimeinPage;
 use App\Livewire\TimeoutPage;
 
+Route::get('/vercel-test', function () {
+    return response('Laravel is working!');
+});
+
+
 
 
 Route::middleware('guest')->group(function () {
